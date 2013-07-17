@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns	= "http://www.w3.org/ns/widgets"
+    xmlns:gap	= "http://phonegap.com/ns/1.0"
+    id		    = "com.phonegap.hydra"
+		version 	= "__VERSION__">
+  <name>Hydra</name>
+  <description>
+    Hydrate your PhoneGap app with assets from the cloud.
+  </description>
+  <author email="fil@adobe.com">
+    Fil Maj
+  </author>
+	<icon src="img/icon-big.png" width="196" height="245" />
+	<icon src="img/icon-small.png" width="77" height="96" />
+  </widget>

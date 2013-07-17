@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
+    <script type="text/javascript" src="cordova-2.7.0.js"></script>
+		<script type="text/javascript" src="js/helpers.js"></script>
+    <script type="text/javascript" src="js/hydration.js"></script>
+    <script type="text/javascript" src="js/hydra.js"></script>
+    <link rel="stylesheet" href="master.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div class="view" id="home">
+      <header>
+        <img src="img/icon-big.png" width="88" id="home-logo" />
+      </header>
+      <form>
+        <fieldset>
+          <legend>Enter your credentials</legend>
+          <div>
+            <input id="username" type="email" placeholder="email" autocomplete="off" autocapitalize="off" />
+            <input id="password" type="password" placeholder="password" />
+          </div>
+        </fieldset>
+        <button type="submit" onclick="hydra(); return false;" ontouchend="">Hydrate</button>
+      </form>
+    </div>
+    <div class="view" id="existing" style="display: none">
+      <header>
+        <h1>Your apps</h1>
+      </header>
+      <div>
+        <ul id="app_list"></ul>
+      </div>
+    </div>
+    <div id="modal-wrap">
+      <div id="modal">
+        <div id="modal-msg">Loading...</div>
+        <div id="progress-bar">
+          <div id="progress-msg">Loading...</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
